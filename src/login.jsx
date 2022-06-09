@@ -6,8 +6,8 @@ import AccountContext from './context/AccountContext';
 const Login = () => {
   const uauth = new UAuth({
     clientID: '32d67489-a847-47af-afe4-9e50a7a8e6a2',
-    redirectUri: 'http://127.0.0.1:3000/',
-    postLogoutRedirectUri: 'http://127.0.0.1:3000/',
+    redirectUri: 'https://nft-xi-nine.vercel.app/',
+    postLogoutRedirectUri: 'https://nft-xi-nine.vercel.app/',
     scope: 'openid email wallet',
   });
   const [{ data, error }, connect] = useConnect();
